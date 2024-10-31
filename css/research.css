@@ -1,0 +1,228 @@
+/* General Settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.name-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #c6c133ad;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.semi-title {
+    font-size: 18px;
+    color: #e8cdc8;
+    display: block;
+    margin-top: 5px;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff4b2b;
+}
+
+/* Back Link */
+.back-link {
+    color: #69bd54;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #ff4b2b;
+}
+
+/* Research Section */
+#research-section {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+}
+
+#research-section h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ff5c5c;
+    margin-bottom: 50px;
+}
+
+/* Research Item */
+/* Research Item */
+.research-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(68, 84, 42, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid #69bd54; /* Add colored border */
+}
+
+/* Optional: Change border color for different sections (e.g., alternate colors) */
+.research-item:nth-child(odd) {
+    border-color: #ff5c5c; /* Example of alternate color for odd sections */
+}
+
+.research-item:nth-child(even) {
+    border-color: #69bd54; /* Example of alternate color for even sections */
+}
+
+
+.research-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.research-item h2 {
+    font-size: 28px;
+    color: #69bd54;
+    margin-bottom: 15px;
+}
+
+.research-item h3 {
+    font-size: 22px;
+    color: #ff5c5c;
+}
+
+.research-item p {
+    font-size: 16px;
+    color: #e8cdc8;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.research-media {
+    max-width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research-media img, .research-media video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(85, 83, 83, 0.5);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .research-item {
+        flex-direction: column;
+    }
+
+    .research-media {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* Research Interests */
+.research-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.research-item ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #e8cdc8;
+}
+
+/* Read More Button */
+.read-more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #69bd54;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ff4b2b;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .research-item h2 {
+        font-size: 24px;
+    }
+
+    .research-item h3 {
+        font-size: 20px;
+    }
+
+    .research-item p, ul li {
+        font-size: 14px;
+    }
+
+    .read-more-btn {
+        font-size: 14px;
+    }
+}
+/* Back link styling */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #12fa5f; /* Match the reddish color from the image */
+    font-size: 20px; /* Adjust the font size */
+    font-weight: bold; /* Make it bold for emphasis */
+    position: relative; /* For positioning the arrow */
+    transition: color 0.3s ease; /* Smooth hover transition */
+    margin-left: 20px;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}

@@ -1,0 +1,73 @@
+#Projects {
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-wrap: wrap; /* Allow wrapping for multiple rows of projects */
+    justify-content: space-between; /* Space out items evenly */
+}
+
+.project-item {
+    flex: 1 1 30%; /* Change width to 30%, making each box smaller */
+    max-width: 30%; /* Set a smaller max width */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+    text-align: center;
+}
+
+
+.project-item img {
+    width: 100%;  /* Make sure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.project-item h3 {
+    font-size: 1.2rem;
+}
+
+.project-gif {
+    margin-bottom: 15px; /* Add space between GIF and text */
+}
+.embedded-video {
+    text-align: center; /* Center the video */
+    margin: 20px 0; /* Add some space above and below the video */
+}
+
+.embedded-video iframe {
+    width: 280px; /* Adjust the width to make it smaller */
+    height: 157px; /* Maintain the aspect ratio */
+}
+
+#Projects {
+    margin-top: 30px; /* Add margin to push projects down */
+}
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.social-media {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    margin: 0 10px;
+}
+
+.social-link img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-link img:hover {
+    transform: scale(1.1);
+}

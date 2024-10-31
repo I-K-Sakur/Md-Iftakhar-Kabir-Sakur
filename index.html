@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="game developer, C++, Unity developer, portfolio, software developer, indie developer" />
+    <meta name="description" content="Portfolio of Mohammad Iftakhar Kabir Sakur, a passionate game developer with experience in Unity and C++." />
+    <title>Portfolio - Mohammad Iftakhar Kabir Sakur</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js\gameProject .js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="styles/landing.css">
+    <link rel="stylesheet" type="text/css" href="styles/career.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="data/images/icon_trans.png">
+
+    <link rel="stylesheet" type="text/css" href="./css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="./css/landing.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #69bd54;
+            text-decoration: none;
+            margin-right: 50px;
+        }
+        .logo br {
+            display: block;
+            margin-bottom: 2px;
+        }
+        nav {
+            display: inline-block;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff4b2b;
+        }
+        .container {
+            margin: 2% auto;
+            max-width: 1100px;
+            color: #ffffff;
+        }
+        #title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff4b2b;
+        }
+        .landing_logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+        #quick_links a {
+            margin: 0 15px;
+            color: #69bd54;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        #quick_links a:hover {
+            color: #ff4b2b;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #fff7f7;
+            margin: 20px 0;
+        }
+        #about_me {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #dddddd;
+        }
+        #pt {
+            font-size: 22px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .buttons_career {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .btn-career-5 {
+            padding: 15px 25px;
+            background-color: #ff4b2b;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+        }
+        .btn-career-5:hover {
+            background-color: #d94227;
+        }
+        .career-section {
+            text-align: left;
+            padding: 20px;
+            color: #cccccc;
+            display: none; /* Hide sections by default */
+        }
+        .career-section.active {
+            display: block; /* Show active section */
+        }
+        .edu-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #69bd54;
+        }
+        .edu {
+            margin-bottom: 20px;
+        }
+        .hr-career {
+            border: 0;
+            height: 1px;
+            background-color: #333333;
+            margin: 40px 0;
+        }
+        #quick_links img {
+            width: 40px;
+            height: 30px;
+            transition: opacity 0.3s ease;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #quick_links img:hover {
+            opacity: 0.7;
+        }
+        #quick_links {
+            font-size: 0;
+        }
+        #quick_links a {
+            font-size: initial;
+        }
+        .semi-title {
+            font-size: 18px;
+            color: #e8cdc8;
+            display: block;
+            margin-top: 5px;
+        }
+        .project-card {
+            background-color: #282828;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .project-card img {
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+        }
+        
+        .project-card .info {
+            margin-left: 15px;
+        }
+        
+        .project-card h3 {
+            margin: 0;
+            color: #fff;
+        }
+        
+        .project-card p {
+            margin: 5px 0 0;
+            color: #aaa;
+        }
+        
+    </style>
+</head>
+
+<body id="top">  
+    <header>
+        <a  class="logo">
+            <div class="name-title">
+                Md Iftakhar Kabir Sakur<br>
+                <span class="semi-title">Game Developer | Programmer</span>
+            </div>
+        </a>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="sections/resume.html">Resume</a>
+            <a href="sections/skills.html">Skills</a>
+            <a href="sections/education.html">Education</a>
+            <a href="sections/academicthings.html">Academic Things</a>
+            <a href="sections/career.html">Career</a>
+            <a href="sections/research.html">Research</a>
+            <a href="sections/blog.html">Blog</a>
+            <a href="sections/contact.html">Contact</a>
+        </nav>
+        
+        
+        
+    </header>
+
+    <div class="container" align="center">  
+        <img class="landing_logo" src="data/image/Sakur-removebg-preview.png" alt="Md Iftakhar Kabir Sakur"> 
+        <div id="title">Iftakhar Kabir Sakur</div><br>    
+        <div class="contact-container">     
+        <div id="social-media">
+            <!-- <a href="mailto:mdiftakharkabirsakur@gmail.com">
+                <img src="data/image/gmail.png" alt="Email" width="30px" height="30px">
+            </a> -->
+            <a href="https://github.com/I-K-Sakur"target="_blank" class="social-link">
+                <img src="data/image/github.png" alt="GitHub" >
+            </a>
+            <a href="https://www.linkedin.com/in/md-iftakhar-kabir-sakur/"target="_blank" class="social-link">
+                <img src="data/image/Linkedin.png" alt="LinkedIn" >
+            </a>
+            <a href="https://www.youtube.com/channel/UCT3W0GmfRrJOfsD_lq0-lQw" target="_blank" class="social-link">
+                 <img src="data/image/Youtube.png" alt="YouTube" >
+            </a>
+            <a href="https://www.instagram.com/iftakharsakur/?hl=en" target="_blank" class="social-link">
+                <img src="data/image/Instagram.png" alt="Instagram" >
+            </a>
+        </div>
+        </div>
+        <hr>
+        <div id="about_me">Hi there! My name is Mohammad Iftakhar Kabir Sakur, a passionate Game Developer who thrives on creating
+             immersive gaming experiences. From building story based games in Unity to experimenting with C#,
+              my focus is on innovative, engaging design and implementation.</div>
+        <hr>
+        <div id="pt"><h2>Explore my journey below!</h2></div><br>
+
+        <!-- Buttons for switching sections -->
+        <!-- <div class="buttons_career">
+            <button class="btn-career-5" onclick="loadSection('education')">Project</button>
+            <button class="btn-career-5" onclick="loadSection('work')">Research</button>
+        </div> -->
+    </div>
+    <!-- Buttons for project categories -->
+    <div class="buttons_career">
+        <button class="btn-career-5" onclick="showProjects('game')">Game Projects</button>
+        <button class="btn-career-5" onclick="showProjects('other')">Other Projects</button>
+    </div>
+
+  <div id="Projects" class="clearfix"></div> <!-- Your project container -->
+
+    <div id="Projects" class="Project-Section"></div>
+    <!-- Dynamic Sections -->
+    <div id="Projects" class="Project-Section">
+        
+        
+    </div>
+
+    <div id="work" class="career-section">
+        
+        
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function loadSection(section) {
+            // Hide all sections
+            document.querySelectorAll('.career-section').forEach((el) => el.classList.remove('active'));
+            // Show the clicked section
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+<footer>
+    <p>&copy; 2024 Md Iftakhar Kabir Sakur. All Rights Reserved.</p>
+</footer>
+<?php include 'footer.php'; ?>
