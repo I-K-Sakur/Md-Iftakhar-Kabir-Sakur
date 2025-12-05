@@ -55,13 +55,31 @@ nav a:hover {
     display: inline-block;
     margin-bottom: 20px;
     text-decoration: none;
-    color: #12fa5f; /* Match the reddish color from the image */
-    font-size: 20px; /* Adjust the font size */
-    font-weight: bold; /* Make it bold for emphasis */
-    position: relative; /* For positioning the arrow */
-    transition: color 0.3s ease; /* Smooth hover transition */
-    margin-left: 20px;
+    color: #12fa5f;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s ease;
+    text-shadow: 0 0 10px #12fa5f, 0 0 20px #12fa5f;
 }
+
+.back-link:hover {
+    color: #0dd94f;
+    text-shadow: 0 0 15px #12fa5f, 0 0 30px #12fa5f;
+    transform: translateX(-4px);
+}
+
+.back-link::before {
+    content: "";
+    margin-right: 10px;
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.back-link:hover::before {
+    transform: translateX(-4px);
+}
+
 /* Divider Styles */
 .hr-career {
     display: block;

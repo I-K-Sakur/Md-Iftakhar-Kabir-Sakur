@@ -62,50 +62,49 @@ nav a:hover {
 }
 
 /* Resume Section */
+/* Premium Dark Gold Style */
 #resume {
     max-width: 900px;
-    margin: 40px auto;
-    background-color: #333;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color: white;
+    margin: 50px auto;
+    padding: 40px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    border-left: 4px solid gold;
+    border-right: 4px solid gold;
 }
 
 #resume h1 {
     text-align: center;
-    color: #ff5c5c;
+    color: gold;
     font-size: 36px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Resume Download Button */
-.resume-download {
-    text-align: center;
-    margin-bottom: 40px;
+.resume-content h2 {
+    color: #e6e6e6;
+    border-bottom: 2px solid gold;
+    padding-bottom: 5px;
+}
+
+.resume-content h3 {
+    color: gold;
+}
+
+ul li {
+    color: #ddd;
+    padding: 5px 0;
 }
 
 .download-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #69bd54;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
+    background-color: gold;
+    color: black;
 }
-.certificate{
-    display: inline-block;
-    padding: 1px 1px;
-    background-color: #69bd54;
-    margin-left: 30px;
-}
+
 .download-btn:hover {
-    background-color: #ff4b2b;
+    background-color: #ffcc33;
 }
+
 
 /* Resume Content */
 .resume-content {
@@ -147,6 +146,51 @@ p {
     line-height: 1.8;
     color: #e8cdc8;
 }
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #12fa5f;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s ease;
+    text-shadow: 0 0 10px #12fa5f, 0 0 20px #12fa5f;
+}
+
+.back-link:hover {
+    color: #0dd94f;
+    text-shadow: 0 0 15px #12fa5f, 0 0 30px #12fa5f;
+    transform: translateX(-4px);
+}
+
+.back-link::before {
+    content: "";
+    margin-right: 10px;
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.back-link:hover::before {
+    transform: translateX(-4px);
+}
+.certificate {
+    background: #007bff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .certificate:hover {
+    background: #0056b3;
+  }
+  
+  
+  
+  
+  
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {

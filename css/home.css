@@ -1,0 +1,237 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+/* Header */
+header {
+background-color: #333;
+color: white;
+padding: 20px;
+position: sticky;
+top: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+}
+
+.logo {
+font-size: 30px;
+font-weight: bold;
+color: #c6c133ad;
+text-decoration: none;
+margin-right: 50px;
+}
+
+nav {
+display: inline-block;
+}
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+margin: 0 15px;
+font-size: 18px;
+padding: 10px 20px;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+background-color: #ff4b2b;
+}
+
+/* Name and Title */
+.name-title {
+font-size: 30px;
+font-weight: bold;
+color: #69bd54;
+text-decoration: none;
+margin-right: 50px;
+}
+
+.semi-title {
+font-size: 18px;
+color: #e8cdc8;
+display: block;
+margin-top: 5px;
+}
+align-items: center;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #69bd54;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.logo br {
+    display: block;
+    margin-bottom: 2px;
+}
+nav {
+    display: inline-block;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: #ff4b2b;
+}
+.container {
+    margin: 2% auto;
+    max-width: 1100px;
+    color: #ffffff;
+}
+#title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff4b2b;
+}
+.landing_logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+#quick_links a {
+    margin: 0 15px;
+    color: #69bd54;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+#quick_links a:hover {
+    color: #ff4b2b;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #fff7f7;
+    margin: 20px 0;
+}
+#about_me {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #dddddd;
+}
+#pt {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.buttons_career {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.btn-career-5 {
+    padding: 15px 25px;
+    background-color: #ff4b2b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+.btn-career-5:hover {
+    background-color: #d94227;
+}
+.career-section {
+    text-align: left;
+    padding: 20px;
+    color: #cccccc;
+    display: none; /* Hide sections by default */
+}
+.career-section.active {
+    display: block; /* Show active section */
+}
+.edu-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #69bd54;
+}
+.edu {
+    margin-bottom: 20px;
+}
+.hr-career {
+    border: 0;
+    height: 1px;
+    background-color: #333333;
+    margin: 40px 0;
+}
+#quick_links img {
+    width: 40px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+}
+#quick_links img:hover {
+    opacity: 0.7;
+}
+#quick_links {
+    font-size: 0;
+}
+#quick_links a {
+    font-size: initial;
+}
+.semi-title {
+    font-size: 18px;
+    color: #e8cdc8;
+    display: block;
+    margin-top: 5px;
+}
+.project-card {
+    background-color: #282828;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.project-card .info {
+    margin-left: 15px;
+}
+
+.project-card h3 {
+    margin: 0;
+    color: #fff;
+}
+
+.project-card p {
+    margin: 5px 0 0;
+    color: #aaa;
+}
+
+#extraButtons {
+    display: none;
+    justify-content: center;
+    gap: 30px;
+}
+
+#extraButtons button {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}

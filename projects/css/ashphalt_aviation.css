@@ -19,18 +19,29 @@ body {
     display: inline-block;
     margin-bottom: 20px;
     text-decoration: none;
-    color: #12fa5f; /* Match the reddish color from the image */
-    font-size: 25px; /* Adjust the font size */
-    font-weight: bold; /* Make it bold for emphasis */
-    position: relative; /* For positioning the arrow */
-    transition: color 0.3s ease; /* Smooth hover transition */
+    color: #12fa5f;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s ease;
+    text-shadow: 0 0 10px #12fa5f, 0 0 20px #12fa5f;
+}
+
+.back-link:hover {
+    color: #0dd94f;
+    text-shadow: 0 0 15px #12fa5f, 0 0 30px #12fa5f;
+    transform: translateX(-4px);
 }
 
 .back-link::before {
-    content: "←"; /* Add the left arrow */
-    margin-right: 8px; /* Space between arrow and text */
-    font-size: 20px; /* Slightly bigger for emphasis */
-    vertical-align: middle; /* Align with text */
+    content: "";
+    margin-right: 10px;
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.back-link:hover::before {
+    transform: translateX(-4px);
 }
 
 .back-link:hover {

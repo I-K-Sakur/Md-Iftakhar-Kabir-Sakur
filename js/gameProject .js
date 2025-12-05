@@ -1,6 +1,17 @@
 const projectsData = {
     game: [
         {
+            title: 'MechaMorph Battle Sphere ',
+            description: 'Action, Survival, Strategy',
+            time: '4 months',
+            engine: 'Unity',
+            gif: 'data/Gif/Mechamorph.gif', // Path to the project's GIF
+            link: 'projects/Mechamorph_Battle.html',
+            
+            videoIds: ['YOUR_VIDEO_ID_1', 'YOUR_VIDEO_ID_2'] // Empty array for no videos
+        },
+
+        {
             title: 'Captain-Zoro',
             description: 'A story based FPS game',
             time: '4+ months',
@@ -10,7 +21,36 @@ const projectsData = {
             
             videoIds: ['YOUR_VIDEO_ID_1', 'YOUR_VIDEO_ID_2'] // Empty array for no videos
         },
-
+        {
+            title: 'Infinity-Runner',
+            description: 'A fast-paced endless runner game where you dodge obstacles and collect point',
+            time: '3 Days',
+            engine: 'Unity',
+            gif: 'data/Gif/InfinityRunner.gif', // Path to the project's GIF
+            link: 'projects/Infinity_Runner.html',
+            
+            videoIds: ['YOUR_VIDEO_ID_1', 'YOUR_VIDEO_ID_2'] // Empty array for no videos
+        },
+        {
+            title: 'Deckmaster-Unite',
+            description: 'Bridge Card,UNO,Pokemon Card Game',
+            time: '8 Days',
+            engine: 'Unity',
+            gif: 'data/Gif/Deckmaster.gif', // Path to the project's GIF
+            link: 'projects/Deckmaster_Unite.html',
+            
+            videoIds: ['YOUR_VIDEO_ID_1', 'YOUR_VIDEO_ID_2'] // Empty array for no videos
+        },
+        {
+            title: 'This-Is-Blast',
+            description: '2D Color-Shooting puzzle game',
+            time: '1 day',
+            engine: 'Unity',
+            gif: 'data/Gif/thisisblast.gif', // Path to the project's GIF
+            link: 'projects/This_Is_Blast.html',
+            
+            videoIds: ['YOUR_VIDEO_ID_1', 'YOUR_VIDEO_ID_2'] // Empty array for no videos
+        },
         {
             title: 'Ashphalt-Vs-Aviation',
             description: 'Clash between Ashphalt and Aviation',
@@ -30,16 +70,6 @@ const projectsData = {
             videoIds: ['YOUR_VIDEO_ID_1', 'YOUR_VIDEO_ID_2'] // Add video IDs as an array
         },
 
-        {
-           
-            title: 'Satellite Simulator Prototype',
-            description: 'It is just a Prototype of Satellite and Rocket',
-            time: '3+ hours',
-            engine: 'Unity',
-            gif: 'data/image/Satellite2.png',// Path to the project's GIF
-            link: 'projects/Satellite_Simulator_Prototype.html',
-            videoIds: [] // Empty array for no videos
-        },
         // {
         //     title: 'New Project Name',
         //     description: 'Description of the project.',
@@ -70,7 +100,7 @@ const projectsData = {
        
         
     ],
-    other: [
+    Simulation: [
         // Other projects
         //         {
         //     title: 'New Project Name',
@@ -81,18 +111,79 @@ const projectsData = {
         //     link: 'projects/new_project.html',
         //     videoIds: [] // Empty array for no videos
         // },
+        {
+           
+            title: 'Satellite Simulator Prototype',
+            description: 'It is just a Prototype of Satellite and Rocket',
+            time: '3+ hours',
+            engine: 'Unity',
+            gif: 'data/image/Satellite2.png',// Path to the project's GIF
+            link: 'projects/Satellite_Simulator_Prototype.html',
+            videoIds: [] // Empty array for no videos
+        },
+        {
+           
+            title: 'Hand-Gesture Robot Control Simulation',
+            description: 'A Hand Gesture Simulation Project',
+            time: '4 hours',
+            engine: 'Unity',
+            gif: 'data/Gif/HandGesture.gif',// Path to the project's GIF
+            link: 'projects/HandGesture.html',
+            videoIds: [] // Empty array for no videos
+        },
+    ],
+    Ai_ML:[
+        {
+           
+            title: 'Real-Time Multi-Class Face Recognition Using Deep Embedding and a Novel Lightweight Deep Learning Model',
+            description: 'A Face Recognition Project',
+            time: '2 Month+',
+            engine: 'python,OpenCV,TensorFlow,Keras & others..',
+            gif: 'data/Gif/FaceRecognition-02.gif',// Path to the project's GIF
+            link: 'projects/FaceRecognition.html',
+            videoIds: [] // Empty array for no videos
+        },
+    ],
+    Software:[
+        {
+            title: 'School Management System',
+            description: 'A School Management System Software Project Backend',
+            time: '4 hours',
+            engine: 'Python',
+            gif: 'data/image/SchoolManagement.png',// Path to the project's GIF
+            link: 'projects/SchoolManagementSystem.html',
+            videoIds: [] // Empty array for no videos
+        },
+        {
+            title: 'Restaurent Management System',
+            description: 'A Restaurent_Management_System Software Project Backend',
+            time: '3 hours',
+            engine: 'Python',
+            gif: 'data/image/Restaurent.png',// Path to the project's GIF
+            link: 'projects/RestaurentManagementSystem.html',
+            videoIds: [] // Empty array for no videos
+        }
     ]
 };
 
 function showProjects(type) {
     const projectContainer = document.getElementById('Projects');
-    projectContainer.innerHTML = ''; // Clear the section before rendering new content
+
+    // If container is already visible, hide it and return
+    if (projectContainer.style.display === "flex") {
+        projectContainer.style.display = "none";
+        return;
+    }
+
+    // Otherwise, show it
+    projectContainer.style.display = "flex";
+
+    // Clear previous content
+    projectContainer.innerHTML = '';
 
     if (projectsData[type]) {
         projectsData[type].forEach((project, index) => {
-            // Determine if the index is odd or even
-            const alignmentClass = index % 2 === 0 ? 'even' : 'odd'; // Use 'even' for even indexes, 'odd' for odd indexes
-
+            const alignmentClass = index % 2 === 0 ? 'even' : 'odd';
             const projectHTML = `
             <div class="project-item ${alignmentClass}">
                 <img src="${project.gif}" alt="${project.title} GIF" class="project-gif">
@@ -102,27 +193,21 @@ function showProjects(type) {
                 <p style="color: #17a2b8;">Engine: ${project.engine}</p>
                 <a href="${project.link}" style="color: #9FE2BF; text-decoration: none;" onmouseover="this.style.color='#c82333'" onmouseout="this.style.color='#dc3545'">View Project</a>
             </div>
-        `;
-        
+            `;
             projectContainer.innerHTML += projectHTML;
-
-            // // Add embedded YouTube videos if they exist
-            // if (project.videoIds.length > 0) {
-            //     project.videoIds.forEach(videoId => {
-            //         const videoHTML = `
-            //             <div class="embedded-video ${alignmentClass}">
-            //                 <iframe width="300" height="200" src="https://www.youtube.com/embed/${videoId}" 
-            //                 title="YouTube video player" frameborder="0" 
-            //                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            //                 </iframe>
-            //             </div>
-            //         `;
-            //         projectContainer.innerHTML += videoHTML; // Append video HTML
-            //     });
-            // }
         });
     } else {
         projectContainer.innerHTML = '<p>No projects found.</p>';
+    }
+}
+
+function toggleOtherProject() {
+    const extraButtons = document.getElementById("extraButtons");
+
+    if (extraButtons.style.display === "none") {
+        extraButtons.style.display = "flex";  // show
+    } else {
+        extraButtons.style.display = "none";   // hide
     }
 }
 
